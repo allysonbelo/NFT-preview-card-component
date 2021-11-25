@@ -1,0 +1,157 @@
+$Soft-blue: hsl(215, 51%, 70%);
+$Cyan: hsl(178, 100%, 50%);
+$Very-dark-blue-1: hsl(217, 54%, 11%);
+$Very-dark-blue-2: hsl(216, 50%, 16%);
+$Very-dark-blue-3: hsl(215, 32%, 27%);
+$White: hsl(0, 0%, 100%);
+
+$font-default: 18px;
+$font-outfit:'Outfit',
+sans-serif;
+
+.container {
+    background-color: $Very-dark-blue-1;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.main {
+    background-color: $Very-dark-blue-2;
+    border-radius: 10px;
+    color: white;
+    font-family: $font-outfit;
+    margin: 0 auto;
+    max-width: 375px;
+    padding: 1.2rem;
+    width: 300px;
+
+    &__title {
+        color: $White;
+        display: flex;
+        flex-direction: column;
+        cursor: pointer;
+        
+        &:hover{
+            color: $Cyan;
+        }
+
+        &::before {
+            background-image: url(../images/image-equilibrium.jpg);
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-size: cover;
+
+            border-radius: 5px;
+            content: "";
+            text-align: center;
+            min-height: 250px;
+            width: 100%;
+            margin-bottom: 1rem;
+        }
+
+        &:hover::before {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            content: url(../images/icon-view.svg);
+            background:
+                linear-gradient(rgba(0, 255, 247, .6), rgba(0, 255, 247, .6)), url(../images/image-equilibrium.jpg);
+            background-repeat: no-repeat, no-repeat;
+            background-position: center, center;
+            background-size: cover, cover;
+        }
+    }
+
+    &__text {
+        color: $Soft-blue;
+        font-size: 1rem;
+        margin-top: .8rem;
+    }
+
+    .info {
+        align-items: center;
+        display: flex;
+        justify-content: space-between;
+        margin-top: .8rem;
+        border-bottom: 1px solid $Very-dark-blue-3;
+        padding-bottom: .8rem;
+
+        &__eth {
+            color: $Cyan;
+            display: flex;
+            align-items: center;
+
+            &::before {
+                background: url(../images/icon-ethereum.svg) no-repeat center center / contain;
+                content: "";
+                width: 11px;
+                height: 18px;
+                margin-right: .5rem;
+            }
+        }
+
+        &__days {
+            color: $Soft-blue;
+            display: flex;
+            align-items: center;
+
+            &::before {
+                content: "";
+                background: url(../images/icon-clock.svg) no-repeat center center / contain;
+                width: 17px;
+                height: 17px;
+                margin-right: .5rem;
+            }
+        }
+    }
+
+    &__p {
+        color: $Soft-blue;
+        margin-top: .8rem;
+        display: flex;
+        align-items: center;
+
+        &::before {
+            background: url(../images/image-avatar.png) no-repeat center center / contain;
+            border: 1px solid$White;
+            border-radius: 50px;
+            content: "";
+            height: 30px;
+            margin-right: .8rem;
+            width: 30px;
+            
+
+            &:hover{
+                color: $Cyan;
+            }
+        }
+
+        span {
+            color: $White;
+            margin-left: 4px;
+            &:hover{
+                cursor: pointer;
+                color: $Cyan;
+            }
+        }
+    }
+
+
+
+}
+
+.attribution {
+    margin-top: 5rem;
+    font-size: 11px;
+    text-align: center;
+    color: $White;
+}
+
+.attribution a {
+    color: $Soft-blue;
+}

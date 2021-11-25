@@ -1,0 +1,128 @@
+.container {
+  background-color: #0d192b;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.main {
+  background-color: #14253d;
+  border-radius: 10px;
+  color: white;
+  font-family: "Outfit", sans-serif;
+  margin: 0 auto;
+  max-width: 375px;
+  padding: 1.2rem;
+  width: 300px;
+}
+.main__title {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+}
+.main__title:hover {
+  color: #00fff7;
+}
+.main__title::before {
+  background-image: url(../images/image-equilibrium.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  border-radius: 5px;
+  content: "";
+  text-align: center;
+  min-height: 250px;
+  width: 100%;
+  margin-bottom: 1rem;
+}
+.main__title:hover::before {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  content: url(../images/icon-view.svg);
+  background: linear-gradient(rgba(0, 255, 247, 0.6), rgba(0, 255, 247, 0.6)), url(../images/image-equilibrium.jpg);
+  background-repeat: no-repeat, no-repeat;
+  background-position: center, center;
+  background-size: cover, cover;
+}
+.main__text {
+  color: #8bacda;
+  font-size: 1rem;
+  margin-top: 0.8rem;
+}
+.main .info {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 0.8rem;
+  border-bottom: 1px solid #2f415b;
+  padding-bottom: 0.8rem;
+}
+.main .info__eth {
+  color: #00fff7;
+  display: flex;
+  align-items: center;
+}
+.main .info__eth::before {
+  background: url(../images/icon-ethereum.svg) no-repeat center center/contain;
+  content: "";
+  width: 11px;
+  height: 18px;
+  margin-right: 0.5rem;
+}
+.main .info__days {
+  color: #8bacda;
+  display: flex;
+  align-items: center;
+}
+.main .info__days::before {
+  content: "";
+  background: url(../images/icon-clock.svg) no-repeat center center/contain;
+  width: 17px;
+  height: 17px;
+  margin-right: 0.5rem;
+}
+.main__p {
+  color: #8bacda;
+  margin-top: 0.8rem;
+  display: flex;
+  align-items: center;
+}
+.main__p::before {
+  background: url(../images/image-avatar.png) no-repeat center center/contain;
+  border: 1px solid white;
+  border-radius: 50px;
+  content: "";
+  height: 30px;
+  margin-right: 0.8rem;
+  width: 30px;
+}
+.main__p::before:hover {
+  color: #00fff7;
+}
+.main__p span {
+  color: white;
+  margin-left: 4px;
+}
+.main__p span:hover {
+  cursor: pointer;
+  color: #00fff7;
+}
+
+.attribution {
+  margin-top: 5rem;
+  font-size: 11px;
+  text-align: center;
+  color: white;
+}
+
+.attribution a {
+  color: #8bacda;
+}
+
+/*# sourceMappingURL=style.css.map */
